@@ -1,21 +1,16 @@
 # eslint-lang-server
 
-A LSP that makes calls to `eslint_d`.
+A lightweight LSP server that delegates linting to `eslint_d` (or `eslint`).
 
 ## Prerequisites
 
 ```sh
 yay -S eslint_d
-```
+yay -S zig
 
-## Install
-
-```sh
-yay -S gcc json-c
-make
-mkdir -p ~/.local/bin
-cp bin/eslint-lang-server ~/.local/bin/
+zig build
 # Make sure to adjust your $PATH if needed
+cp zig-out/bin/eslint-lang-server ~/.local/bin/eslint-lang-server
 ```
 
 ## Helix integration

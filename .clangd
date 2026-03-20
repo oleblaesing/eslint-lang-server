@@ -1,3 +1,0 @@
-CompileFlags:
-  Add: [-I../include, -xc, -std=c11, -Wall, -Wextra]
-  Compiler: gcc
